@@ -22,7 +22,7 @@ RoundedLoadingButton is a Flutter package with a simple implementation of an ani
 
 ### Import
 
-    import 'package:rounded_loading_button_plus/rounded_loading_button_plus.dart';
+    import 'package:rounded_loading_button_plus/rounded_loading_button.dart';
 
 ### Simple Implementation
 

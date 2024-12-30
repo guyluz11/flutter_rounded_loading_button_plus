@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:rounded_loading_button_plus/rounded_loading_button_plus.dart';
+import 'package:rounded_loading_button_plus/rounded_loading_button.dart';
 
 void main() => runApp(MyApp());
 

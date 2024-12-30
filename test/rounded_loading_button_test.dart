@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rounded_loading_button_plus/rounded_loading_button_plus.dart';
+import 'package:rounded_loading_button_plus/rounded_loading_button.dart';
 
 class MockOnPressedFunction {
   int called = 0;
