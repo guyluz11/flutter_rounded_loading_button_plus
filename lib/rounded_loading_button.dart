@@ -52,6 +52,9 @@ class RoundedLoadingButton extends StatefulWidget {
   /// The radius of the button border
   final double borderRadius;
 
+  /// The side of the button border
+  final BorderSide borderSide;
+
   /// The duration of the button animation
   final Duration duration;
 
@@ -100,6 +103,7 @@ class RoundedLoadingButton extends StatefulWidget {
     this.animateOnTap = true,
     this.valueColor = Colors.white,
     this.borderRadius = 35,
+    this.borderSide = BorderSide.none,
     this.elevation = 2,
     this.duration = const Duration(milliseconds: 500),
     this.curve = Curves.easeInOutCirc,
@@ -128,7 +132,6 @@ class RoundedLoadingButtonState extends State<RoundedLoadingButton>
   late Animation _squeezeAnimation;
   late Animation _bounceAnimation;
   late Animation _borderAnimation;
-
   final _state = BehaviorSubject<ButtonState>.seeded(ButtonState.idle);
 
   @override
@@ -189,7 +192,8 @@ class RoundedLoadingButtonState extends State<RoundedLoadingButton>
     );
 
     final _btn = ButtonTheme(
-      shape: RoundedRectangleBorder(borderRadius: _borderAnimation.value),
+      shape: RoundedRectangleBorder(
+          borderRadius: _borderAnimation.value, side: widget.borderSide),
       disabledColor: widget.disabledColor,
       padding: const EdgeInsets.all(0),
       child: ElevatedButton(

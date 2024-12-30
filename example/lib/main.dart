@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => _doSomething(_btnController2),
                 valueColor: Colors.black,
                 borderRadius: 10,
+                borderSide : BorderSide(color: Colors.red)
                 child: Text('''
 Tap me i have a huge text''', style: TextStyle(color: Colors.white)),
               ),
