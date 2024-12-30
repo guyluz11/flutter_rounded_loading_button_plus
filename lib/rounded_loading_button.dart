@@ -192,14 +192,14 @@ class RoundedLoadingButtonState extends State<RoundedLoadingButton>
     );
 
     final _btn = ButtonTheme(
-      shape: RoundedRectangleBorder(
-          borderRadius: _borderAnimation.value, side: widget.borderSide),
+      shape: RoundedRectangleBorder(borderRadius: _borderAnimation.value),
       disabledColor: widget.disabledColor,
       padding: const EdgeInsets.all(0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           surfaceTintColor: widget.disabledColor,
           minimumSize: Size(_squeezeAnimation.value, widget.height),
+          side: widget.borderSide,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(widget.borderRadius),
           ),
